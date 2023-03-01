@@ -7,7 +7,7 @@ sets = 20;
 targetNum = 4;
 
 
-data = [load('yoshimoto_4.csv'); load('yoshimoto_5.csv')];
+data = [load('eeg-raw-data1.csv'); load('eeg-raw-data2.csv')];
 
 SSVEPdata = zeros(channels, max_t_length, sets, targetNum);
 rawDataTemp = zeros(max_t_length,1);
@@ -45,4 +45,4 @@ end
 
 a = SSVEPdata(1,:,1,1);
 
-save("yoshiInew.mat", "SSVEPdata");
+save("SSVEPdata.mat", "SSVEPdata");
