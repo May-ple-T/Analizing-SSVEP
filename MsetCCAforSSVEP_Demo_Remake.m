@@ -19,7 +19,7 @@ n_correct=zeros(3,length(TW));
 
 
 %% Load SSVEP data
-load obabw.mat
+load SSVEPdata.mat
 % Data description:
 % 8 channels x 512 points x 20 trials x 4 stimulus frequencies
 
